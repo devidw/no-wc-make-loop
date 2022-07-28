@@ -1,0 +1,5 @@
+= Prevent infinite webhook loop between WooCommerce and make.com
+
+When connecting https://woocommerce.com[WooCommerce] with a third-party service via https://make.com[make.com], where both systems send webhooks to make.com, it is likely you will end up in an infinite loop, where each webhook is sent to make.com, and make.com sends the webhook back to WooCommerce, and so on.
+
+To prevent this from happening, this plugin will prevent WooCommerce from sending webhooks to make.com when incoming requests to the WordPress rest API are made from make.com.
