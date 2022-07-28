@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 /**
  * Plugin Name: Prevent inifinite webhook loop between WooCommerce and make.com
- * Plugin Description: Don't deliver WooCommerce webhooks, when the source of the event comes from the make.com infrastructure to prevent an inifinite loop between both systems.
+ * Plugin Description: Don't deliver WooCommerce webhooks, when the source of the event comes from the make.com infrastructure to prevent an infinite loop between both systems.
  * Plugin URI: https://github.com/devidw/no-wc-make-loop
  * Author: David Wolf
  * Author URI: https://github.com/devidw
