@@ -20,6 +20,7 @@ declare(strict_types=1);
 add_filter(
     hook_name: 'woocommerce_webhook_should_deliver',
     accepted_args: 3,
+    priority: PHP_INT_MAX,
     callback: function (
         bool $shouldDeliver,
         \WC_Webhook $webhook,
