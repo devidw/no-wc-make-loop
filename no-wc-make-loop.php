@@ -9,7 +9,7 @@ declare(strict_types=1);
  * Author: David Wolf
  * Author URI: https://github.com/devidw
  * Version: 1.0.0
- * License: GPLv2 or later
+ * License: The Unlicense
  */
 
 /**
