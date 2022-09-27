@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+defined('ABSPATH') or die;
+
 /**
  * Plugin Name: Prevent inifinite webhook loop between WooCommerce and make.com
  * Plugin Description: Don't deliver WooCommerce webhooks, when the source of the event comes from the make.com infrastructure to prevent an infinite loop between both systems.
