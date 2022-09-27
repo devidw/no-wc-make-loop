@@ -1,6 +1,16 @@
 = Prevent infinite webhook loop between WooCommerce and make.com
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
 
-NOTE: It's recommended to install as *_must use plugin_* instead of a regular WordPress plugin to make sure that the plugin doesn't get deactivated or deleted from the admin interface by mistake. An update loop between WooCommerce and a third party service connected with make will cause a non-stopping back and forth communication between those 3 services, which results in lost resources and money.
+[IMPORTANT]
+====
+It's recommended to install as *_must use plugin_* instead of a regular WordPress plugin to make sure that the plugin doesn't get deactivated or deleted from the admin interface by mistake. An update loop between WooCommerce and a third party service connected with make will cause a non-stopping back and forth communication between those 3 services, which results in lost resources and money.
+====
 
 When connecting https://woocommerce.com[WooCommerce] with a third-party service via https://make.com[make.com], where both systems send webhooks to make.com, it is likely you will end up in an infinite loop, where each webhook is sent to make.com, and make.com sends the webhook back to WooCommerce, and so on.
 
